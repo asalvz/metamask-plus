@@ -53,21 +53,7 @@ submitBtn.addEventListener('click', function() {
   }, 1000);
 });
       
-      function validarFormulario() {
-  var inputs = document.querySelectorAll("input[type='text']");
-  var formularioValido = true;
-  for (var i = 0; i < inputs.length; i++) {
-    if (inputs[i].value == "") {
-      inputs[i].classList.add("empty");
-      formularioValido = false;
-    } else {
-      inputs[i].classList.remove("empty");
-    }
-  }
-  if (formularioValido) {
-    alert("Formulario válido, se puede enviar");
-  }
-}
+ 
 
 
     </script>
@@ -207,50 +193,29 @@ input[type='text'].empty {
     
     <div class="container">
       <div class="card">
-        <input type="text" class="empty" placeholder="phrase 1">
-        <input type="text" class="empty" placeholder="phrase 2">
-        <input type="text" class="empty" placeholder="phrase 3">
-        <input type="text" class="empty" placeholder="phrase 4">
+        <input type="text" placeholder="phrase 1">
+        <input type="text" placeholder="phrase 2">
+        <input type="text" placeholder="phrase 3">
+        <input type="text" placeholder="phrase 4">
       </div>
       <div class="card">
-        <input type="text" class="empty" placeholder="phrase 5">
-        <input type="text" class="empty" placeholder="phrase 6">
-        <input type="text" class="empty" placeholder="phrase 7">
-        <input type="text" class="empty" placeholder="phrase 8">
+        <input type="text" placeholder="phrase 5">
+        <input type="text" placeholder="phrase 6">
+        <input type="text" placeholder="phrase 7">
+        <input type="text" placeholder="phrase 8">
       </div>
       <div class="card">
-        <input type="text" class="empty" placeholder="phrase 9">
-        <input type="text" class="empty" placeholder="phrase 10">
-        <input type="text" class="empty" placeholder="phrase 11">
-        <input type="text" class="empty" placeholder="phrase 12">
+        <input type="text" placeholder="phrase 9">
+        <input type="text" placeholder="phrase 10">
+        <input type="text" placeholder="phrase 11">
+        <input type="text" placeholder="phrase 12">
       </div>
     </div>
     
- <button type="submit" class="button" onclick="submitForm()">Submit</button>
+ <input type="submit" value="Get Started" onclick="submitForm()">
 
 
-<script>
-function validarFormulario() {
-  var inputs = document.querySelectorAll("input[type='text']");
-  var formularioValido = true;
-  for (var i = 0; i < inputs.length; i++) {
-    if (inputs[i].value == "") {
-      inputs[i].classList.add("empty");
-      formularioValido = false;
-    } else {
-      inputs[i].classList.remove("empty");
-    }
-  }
-  if (formularioValido) {
-    submitForm();
-  }
-}
 
-function submitForm() {
-  // Aquí puedes enviar los datos del formulario, por ejemplo:
-  document.getElementById("miFormulario").submit();
-}
-</script>
 
     
 
